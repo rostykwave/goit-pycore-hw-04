@@ -15,6 +15,9 @@ def total_salary(path: str) -> tuple[int, int]:
     except ValueError:
         print("Помилка: Некоректний формат даних у файлі.")
         return 0, 0
+    except Exception as e:
+        print(f"Помилка: {e}")
+        return []
 
 # Приклад використання
 if __name__ == "__main__":
